@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Menu – Flax Healthy Living</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,700;1,9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap nav">
+    <a class="logo" href="index.html"><img src="images/logo-green.png" alt="Flax Healthy Living"></a>
+    <ul class="links" id="links"><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="menu.html" class="active" aria-current="page">Menu</a></li><li><a href="contact.html">Contact</a></li></ul>
+    <div class="head-cta">
+      <button class="btn sm order-open" type="button">Order Now</button>
+      <button class="burger" type="button" aria-label="Open menu" aria-controls="links" aria-expanded="false">☰</button>
+    </div>
+  </div>
+</header>
+<main>
+
+<section class="page-hero" style="padding-bottom:40px">
+  <div class="wrap"><div class="crumbs"><a href="index.html">Home</a> / Menu</div>
+  <h1>Our Menu</h1><p>Pick a category, or search for your favourite dish.</p></div>
+</section>
+<div class="menu-tools">
+  <div class="wrap">
+    <div class="tools-row">
+      <label class="search">🔍<input id="q" type="search" placeholder="Search salads, wraps, bowls…" aria-label="Search the menu"></label>
+      <div class="toggle" role="group" aria-label="Diet filter"><button type="button" class="on" data-f="all">All</button><button type="button" data-f="v">🟢 Veg</button><button type="button" data-f="n">🔴 Non-Veg</button></div>
+    </div>
+    <div class="chiprow" id="chips" role="tablist" aria-label="Menu categories"></div>
+  </div>
+</div>
+<div class="menu-body"><div class="wrap" id="menu-root"></div></div>
+
+</main>
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div><a class="logo" href="index.html"><img src="images/logo-white.png" alt="Flax Healthy Living" style="height:96px"></a>
+        <p>The freshest, cleanest food in India. Mumbai, Bengaluru and Goa, since 2016.</p>
+        <div class="social"><a href="#" aria-label="Facebook">f</a><a href="#" aria-label="Instagram">ig</a><a href="#" aria-label="LinkedIn">in</a><a href="#" aria-label="X">x</a></div></div>
+      <div><h4>Explore</h4><ul><li><a href="index.html">Home</a></li><li><a href="about.html">Our Story</a></li><li><a href="menu.html">Full Menu</a></li><li><a href="contact.html">Find Us</a></li></ul></div>
+      <div><h4>Menu</h4><ul><li><a href="menu.html#signature-salads">Salads</a></li><li><a href="menu.html#super-bowls">Super Bowls</a></li><li><a href="menu.html#wholesome-wraps">Wraps</a></li><li><a href="menu.html#healthy-desserts">Desserts</a></li></ul></div>
+      <div><h4>Contact</h4><ul><li>Mumbai · Bengaluru · Goa</li><li>+91 00000 00000</li><li>hello@flax.example</li></ul></div>
+    </div>
+    <div class="copy"><span>© 2026 Flax Healthy Living. All rights reserved.</span><span>Privacy Policy · Terms</span></div>
+  </div>
+</footer>
+<div class="modal" id="order-modal" hidden>
+  <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="om-title">
+    <button class="modal-x" type="button" aria-label="Close">✕</button>
+    <h3 id="om-title">Order Flax</h3>
+    <p>Order Flax on Swiggy or Zomato. Open the app, choose the Flax outlet nearest to you and place your order.</p>
+    <div class="order-btns"><a class="sw" href="https://www.swiggy.com/city/mumbai/flax-healthy-living-n-m-joshi-marg-parel-rest39199" target="_blank" rel="noopener">Order on Swiggy</a><a class="zo" href="https://www.zomato.com/mumbai/flax-healthy-living-santacruz-east/order" target="_blank" rel="noopener">Order on Zomato</a></div>
+  </div>
+</div>
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
